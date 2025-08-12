@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>P5-Abid</title>
+<style>
+  :root {
+    --bg:#103a57;
+    --panel:#0f2838;
+    --card:#262424;
+    --accent:#1da1f2;
+    --muted:#ffffff; /* teks putih */
+    --divider:#0d6b93;
+    --glass: rgba(255,255,255,0.03);
+    --radius:14px;
+    --gap:18px;
+    font-family: "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
+  }
+
+  html,body {
+    height:100%;
+    margin:0;
+    background: linear-gradient(180deg,#163a54 0%, #0f324d 100%);
+    color:#fff; /* semua teks putih */
+  }
+
+  .wrap {
+    max-width:680px;
+    margin:28px auto;
+    padding:20px;
+  }
+
+  .card {
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow: 0 6px 30px rgba(2,10,20,0.45);
+  }
+
+  .hero {
+    padding:28px 22px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.06));
+    display:flex;
+    gap:18px;
+    align-items:center;
+  }
+
+  .hero .avatar {
+    width:82px;
+    height:82px;
+    border-radius:12px;
+    background: linear-gradient(135deg,#0ea5c9,#145d86);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    font-size:30px;
+    color:#fff;
+  }
+
+  .hero .head { flex:1; }
+  .hero h1 { margin:0; font-size:20px; letter-spacing:1px; text-transform:uppercase; color:#fff; }
+  .hero p { margin:6px 0 0 0; color:#fff; font-size:13px; }
+
+  .links {
+    padding:18px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.02), rgba(255,255,255,0.01));
+  }
+
+  .link {
+    background: #000; /* tombol sentuh hitam */
+    border-radius:10px;
+    padding:14px 14px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    border: none;
+    position:relative;
+    color:#fff; /* teks putih di tombol */
+    text-decoration:none;
+  }
+
+  .link .icon {
+    width:38px;
+    height:38px;
+    min-width:38px;
+    border-radius:8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    color:#fff;
+  }
+
+  .link .label {
+    flex:1;
+    text-align:center;
+    font-weight:600;
+    letter-spacing:0.6px;
+    text-transform:uppercase;
+    font-size:14px;
+    color:#fff;
+  }
+
+  .link .menu {
+    width:20px;
+    height:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    opacity:0.7;
+    color:#fff;
+  }
+
+  .divider {
+    height:10px;
+    background: linear-gradient(90deg, rgba(13,107,147,0.8), rgba(12,84,116,0.7));
+  }
+
+  .footer {
+    padding:18px;
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    align-items:center;
+    background: linear-gradient(180deg, rgba(0,0,0,0.02), rgba(255,255,255,0.01));
+  }
+
+  .social {
+    width:44px;
+    height:44px;
+    border-radius:10px;
+    background:var(--glass);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:18px;
+    color:#fff;
+  }
+
+  .small {
+    text-align:center;
+    color:#fff;
+    font-size:12px;
+    padding:14px 20px 26px;
+  }
+
+  @media (max-width:420px) {
+    .wrap { padding:12px; }
+    .hero { padding:18px; }
+    .hero .avatar { width:68px; height:68px; font-size:26px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="hero">
+        <div class="avatar">P5</div>
+        <div class="head">
+          <h1>Abid Haidar Abqory</h1>
+          <p>Tempat Tanggal Lahir:Ponorogo,13,09,2011</p>
+          <p>Hobi:Membaca</p>
+          <p>Cita-cita:Ilmuwan</p>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="links">
+        <a class="link" href="https://wa.me/+62 838-9574-8789" target="_blank">
+          <div class="icon">WA</div>
+          <div class="label">WhatsApp</div>
+          <div class="menu">⋮</div>
+        </a>
+
+        <a class="link" href="https://maps.app.goo.gl/9pnpMoiAKc8uNwLL9?g_st=ac" target="_blank">
+          <div class="icon">🌐</div>
+          <div class="label">Alamat</div>
+          <div class="menu">⋮</div>
+        </a>
+      </div>
+
+      <div class="divider"></div>
+    </div>
+  </div>
+</body>
+</html>
